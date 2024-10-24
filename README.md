@@ -98,6 +98,8 @@ Kubernetes успешно установлен!
 
 Ансибл все команды завершил успешно. Но после выполнения команды kubectl get nodes ноды не отобразились. Оказалось, что мастер ноду выбрал другую. А виртмашину, с которой запускал команды, не добавил ни в одну из нод. Время дальше тратить не стал и пошел более быстрым способом через kubeadm.
 
+Также использовал ссылку kubespray из лекции, но с ней не сработала установка. Покопавшись, взял ссылку из презентации - она сработала.
+
 Список использованных команд через kubespray:
 
     scp id_ed25519 artem@84.201.154.76:.ssh/id_ed25519
@@ -105,8 +107,8 @@ Kubernetes успешно установлен!
     
     sudo apt update
     sudo apt install git python3 python3-pip -y
-    git clone https://github.com/kubernetes-incubator/kubespray.git
-    git clone https://github.com/kubernetes-sigs/kubespray - для ubuntu 20.04
+    git clone https://github.com/kubernetes-incubator/kubespray.git - ссылка из лекции. С этой ссылкой установка не прошла.
+    git clone https://github.com/kubernetes-sigs/kubespray - рабочая ссылка для ubuntu 20.04
     cd kubespray
     sudo apt install python3.12-venv - создаем виртуальное окружение
     
