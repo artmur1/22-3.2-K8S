@@ -34,7 +34,7 @@
     scp id_ed25519 artem@84.201.154.76:.ssh/id_ed25519
     ~/.ssh$ chmod 600 id_ed25519
 
-Далее сделал порт-форвардинг
+Далее сделал форвардинг
 
     cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
     overlay
